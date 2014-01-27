@@ -73,6 +73,8 @@ void loop()
       Serial.write(arduinoStatus); // let PC know our status
       digitalWrite(13,!blink); //if good input received, blink!
       blink=!blink;
+      Serial.write(arduinoStatus); // to check if connection is still active
+
     }
   }
   
